@@ -3,13 +3,12 @@ string sample = Console.ReadLine();
 
 Dictionary<char, int> charCounts = new Dictionary<char, int>();  // new() or []
 
-string alpha = "abcdefghijklmnopqrstuvwxyz";
-
 foreach (char c in sample.ToCharArray())
 {
     char character = c.ToString().ToLower()[0];
 
-    if (alpha.Contains(character))
+    // Updated to use .IsLetter() instead of checking against alpha string
+    if (char.IsLetter(character))
     {
         if (charCounts.ContainsKey(character))
         {
