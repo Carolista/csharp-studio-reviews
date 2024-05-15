@@ -4,9 +4,22 @@
 // https://docs.google.com/spreadsheets/d/1pNsU61LXCcauCPyk9rZFznN4m7CBWASiPwthLRb52Zc/edit#gid=0
 
 // Test creating objects of MenuItem class
-MenuItem item1 = new MenuItem("Pepperoni Pizza", "The classic slice, hot and delicious!", 7.39, "Main Course");
-MenuItem item2 = new MenuItem("Toasted Ravioli", "A St. Louis favorite, served with a side of pizza sauce", 6.89, "Appetizer");
-MenuItem item3 = new MenuItem("Gooey Butter Cake", "The ooiest, gooiest dessert this side of the Mississippi", 4.99, "Dessert");
+MenuItem item1 =
+    new("Pepperoni Pizza", "The classic pie, hot and delicious!", 15.99, "Main Course");
+MenuItem item2 =
+    new(
+        "Toasted Ravioli",
+        "A St. Louis favorite, served with a side of pizza sauce",
+        7.99,
+        "Appetizer"
+    );
+MenuItem item3 =
+    new(
+        "Gooey Butter Cake",
+        "The ooiest, gooiest dessert this side of the Mississippi",
+        5.99,
+        "Dessert"
+    );
 
 // Print values of properties from each item
 Console.WriteLine(item1.Name);

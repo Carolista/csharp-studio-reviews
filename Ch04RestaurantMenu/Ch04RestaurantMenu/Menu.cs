@@ -4,7 +4,7 @@ namespace Ch04RestaurantMenu
     {
         // FIELDS
         public List<MenuItem> MenuItems { get; set; } = []; // new ArrayList<>() or new()
-        public DateTime LastUpdated { get; set; }
+        public DateTime LastUpdated { get; set; } = DateTime.Now;
 
         // Default constructor is fine
     }
