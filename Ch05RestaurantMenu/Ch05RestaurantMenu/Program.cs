@@ -3,6 +3,9 @@
 // Planning for this application:
 // https://docs.google.com/spreadsheets/d/1pNsU61LXCcauCPyk9rZFznN4m7CBWASiPwthLRb52Zc/edit#gid=1808696522
 
+// Good reference for the DateTime class in C#:
+// https://www.c-sharpcorner.com/article/datetime-in-c-sharp/
+
 // Objects of MenuItem class
 MenuItem item1 =
     new("Pepperoni Pizza", "The classic pie, hot and delicious!", 15.99, "Main Course");
