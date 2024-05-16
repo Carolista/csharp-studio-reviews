@@ -16,25 +16,19 @@ namespace Ch05RestaurantMenu
         {
             string nl = Environment.NewLine;
             StringBuilder appetizers = new(); // or new StringBuilder()
+            StringBuilder mainCourses = new();
+            StringBuilder desserts = new();
             foreach (MenuItem item in MenuItems)
             {
                 if (Equals(item.Category, "Appetizer"))
                 {
                     appetizers.Append(nl).Append(item).Append(nl);
                 }
-            }
-            StringBuilder mainCourses = new();
-            foreach (MenuItem item in MenuItems)
-            {
-                if (Equals(item.Category, "Main Course"))
+                else if (Equals(item.Category, "Main Course"))
                 {
                     mainCourses.Append(nl).Append(item).Append(nl);
                 }
-            }
-            StringBuilder desserts = new();
-            foreach (MenuItem item in MenuItems)
-            {
-                if (Equals(item.Category, "Dessert"))
+                else if (Equals(item.Category, "Dessert"))
                 {
                     desserts.Append(nl).Append(item).Append(nl);
                 }
