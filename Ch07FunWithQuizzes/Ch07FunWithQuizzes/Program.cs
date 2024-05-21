@@ -32,7 +32,7 @@ MultipleChoice question3 = new(q3, q3Choices);
 
 quiz.questions.AddRange([question1, question2, question3]);
 
-quiz.runQuiz();
+quiz.RunQuiz();
 
 Console.WriteLine(Environment.NewLine + 
     "You answered " + quiz.NumCorrect + " of " + quiz.questions.Count +

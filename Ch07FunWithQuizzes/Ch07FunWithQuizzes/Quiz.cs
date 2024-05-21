@@ -9,7 +9,7 @@ public class Quiz
 
     // default constructor is sufficient
 
-    public void runQuiz() {
+    public void RunQuiz() {
 
         // NOTE: Might be good to shuffle questions first... TODO in future
 
