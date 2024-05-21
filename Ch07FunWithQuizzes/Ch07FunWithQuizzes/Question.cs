@@ -13,21 +13,29 @@ public class Question
         CreateRandomizedChoices(choiceArr);
     }
 
-    public void CreateRandomizedChoices(Choice[] choiceArr) {
+    // Bonus mission: Use secondary constructor to bypass choiceArr
+    public Question(string prompt)
+        : this(prompt, []) { }
+
+    public void CreateRandomizedChoices(Choice[] choiceArr)
+    {
         Random.Shared.Shuffle(choiceArr);
         List<Choice> choiceList = [.. choiceArr];
-        for (int i=0; i < choiceList.Count; i++) {
-            Choices.Add(i+1, choiceList[i]);
+        for (int i = 0; i < choiceList.Count; i++)
+        {
+            Choices.Add(i + 1, choiceList[i]);
         }
     }
 
-    public string GetFormattedChoices() {
+    public string GetFormattedChoices()
+    {
         StringBuilder formattedChoices = new StringBuilder();
-        foreach (int choiceNum in Choices.Keys) {
-            string choice = "\t" + choiceNum + " - " + Choices[choiceNum].Content + Environment.NewLine;
+        foreach (int choiceNum in Choices.Keys)
+        {
+            string choice =
+                "\t" + choiceNum + " - " + Choices[choiceNum].Content + Environment.NewLine;
             formattedChoices.Append(choice);
         }
         return formattedChoices.ToString();
     }
-    
 }

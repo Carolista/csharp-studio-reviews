@@ -8,8 +8,6 @@ public class TrueFalse : Question
     public override string ToString()
     {
         string nl = Environment.NewLine;
-        return nl + "TRUE OR FALSE:" + nl +
-            Prompt + nl +
-            GetFormattedChoices();
+        return nl + "TRUE OR FALSE:" + nl + Prompt + nl + GetFormattedChoices();
     }
 }

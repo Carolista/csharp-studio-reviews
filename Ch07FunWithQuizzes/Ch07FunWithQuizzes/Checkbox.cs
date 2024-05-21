@@ -8,8 +8,6 @@ public class Checkbox : Question
     public override string ToString()
     {
         string nl = Environment.NewLine;
-        return nl + "CHOOSE ONE OR MORE:" + nl +
-            Prompt + nl +
-            GetFormattedChoices();
+        return nl + "CHOOSE ONE OR MORE:" + nl + Prompt + nl + GetFormattedChoices();
     }
 }

@@ -2,7 +2,6 @@
 
 public class Choice
 {
-
     public string Content { get; set; }
     public bool Correct { get; set; }
 
@@ -12,5 +11,6 @@ public class Choice
         Correct = correct;
     }
 
-    public Choice(string content) : this(content, false) {}
+    public Choice(string content)
+        : this(content, false) { }
 }

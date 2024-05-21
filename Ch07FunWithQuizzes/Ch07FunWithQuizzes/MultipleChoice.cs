@@ -8,8 +8,6 @@ public class MultipleChoice : Question
     public override string ToString()
     {
         string nl = Environment.NewLine;
-        return nl + "CHOOSE ONE:" + nl +
-            Prompt + nl +
-            GetFormattedChoices();
+        return nl + "CHOOSE ONE:" + nl + Prompt + nl + GetFormattedChoices();
     }
 }
