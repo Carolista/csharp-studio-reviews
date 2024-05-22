@@ -31,7 +31,6 @@ MultipleChoice question3 = new(q3, q3Choices);
 
 quiz.questions.AddRange([question1, question2, question3]);
 quiz.Run();
-quiz.End();
 
 // BONUS MISSION
 
@@ -43,6 +42,4 @@ Paragraph toppingsExpo =
     new("Now take a moment to expound upon your favorite ice cream toppings and combinations!");
 
 survey.questions.AddRange([faveIceCream, vanillaRank, toppingsExpo]);
-
 survey.Run();
-survey.End();

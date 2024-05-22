@@ -61,20 +61,16 @@ public class Quiz
                     i++;
                 }
             }
-        }
-    }
 
-    // Bonus mission: Make this virtual so it can be overridden in Survey
-    public virtual void End()
-    {
-        Console.WriteLine(
-            Environment.NewLine
-            + "You answered "
-            + NumCorrect
-            + " of "
-            + questions.Count
-            + " questions correctly. Thanks for playing!"
-            + Environment.NewLine
-        );
+            Console.WriteLine(
+                Environment.NewLine
+                    + "You answered "
+                    + NumCorrect
+                    + " of "
+                    + questions.Count
+                    + " questions correctly. Thanks for playing!"
+                    + Environment.NewLine
+            );
+        }
     }
 }

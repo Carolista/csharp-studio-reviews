@@ -12,19 +12,19 @@ public class Survey : Quiz
             string userResponse = Console.ReadLine();
             allResponses.Add(question.Prompt, userResponse);
         }
-    }
 
-    public override void End()
-    {
         string nl = Environment.NewLine;
         string line = "-------------------------------------------------------------------";
+
         Console.WriteLine(line);
         Console.WriteLine("Thank you for taking our survey! We have recorded your responses." + nl);
+
         foreach (KeyValuePair<string, string> kvp in allResponses)
         {
             Console.WriteLine(kvp.Key);
             Console.WriteLine(kvp.Value + nl);
         }
+
         Console.WriteLine(line);
     }
 }
