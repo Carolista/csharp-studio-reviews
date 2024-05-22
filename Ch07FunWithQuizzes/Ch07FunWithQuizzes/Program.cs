@@ -30,18 +30,8 @@ Choice[] q3Choices =
 MultipleChoice question3 = new(q3, q3Choices);
 
 quiz.questions.AddRange([question1, question2, question3]);
-
-// quiz.Run();
-
-// Console.WriteLine(
-//     Environment.NewLine
-//         + "You answered "
-//         + quiz.NumCorrect
-//         + " of "
-//         + quiz.questions.Count
-//         + " questions correctly. Thanks for playing!"
-//         + Environment.NewLine
-// );
+quiz.Run();
+quiz.End();
 
 // BONUS MISSION
 
@@ -55,7 +45,4 @@ Paragraph toppingsExpo =
 survey.questions.AddRange([faveIceCream, vanillaRank, toppingsExpo]);
 
 survey.Run();
-
-Console.WriteLine(
-    Environment.NewLine + "Thank you for taking our survey! We have recorded your responses."
-);
+survey.End();
