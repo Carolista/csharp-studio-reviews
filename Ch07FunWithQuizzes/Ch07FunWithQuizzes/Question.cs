@@ -8,7 +8,7 @@ public class Question
     // TODO: Define a constructor to accept the prompt and an array of choice objects
     // Set the prompt directly, but use an instance method to fill the dictionary using the array
 
-    // TODO: (Bonus mission) Define a second constructor to bypass the choice array
+    // TODO: Define a second constructor to bypass the choice array
 
     // TODO: Define a method to shuffle and number the choices and set them in the dictionary
 
