@@ -13,7 +13,7 @@ public abstract class Question
         CreateRandomizedChoices(choiceArr);
     }
 
-    // Secondary constructor to bypass using a choice array
+    // Secondary constructor to bypass choice array
     public Question(string prompt)
         : this(prompt, []) { }
 

@@ -5,7 +5,7 @@
 public class Quiz
 {
     public readonly List<Question> questions = [];
-    public int NumCorrect { get; set; }
+    public int NumCorrect { get; set; } = 0;
 
     // default constructor is sufficient
 

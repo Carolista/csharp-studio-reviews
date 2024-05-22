@@ -6,7 +6,7 @@
 
 Quiz quiz = new();
 
-string q1 = "Which of the following are books by Jane Austen?";
+string q1Prompt = "Which of the following are books by Jane Austen?";
 Choice[] q1Choices =
 [
     new Choice("Jane Eyre"),
@@ -14,12 +14,13 @@ Choice[] q1Choices =
     new Choice("Wives and Daughters"),
     new Choice("Mansfield Park", true)
 ];
-Checkbox question1 = new(q1, q1Choices);
+Checkbox q1 = new(q1Prompt, q1Choices);
 
-string q2 = "The most-published author of all time is Agatha Christie.";
-TrueFalse question2 = new(q2);
+string q2Prompt = "The most-published author of all time is Agatha Christie.";
+Choice[] q2Choices = [new Choice("True", true), new Choice("False")];
+TrueFalse q2 = new(q2Prompt, q2Choices);
 
-string q3 =
+string q3Prompt =
     "Which poem did history-making poet Amanda Gorman recite at the U.S. presidential inauguration in 2021?";
 Choice[] q3Choices =
 [
@@ -28,11 +29,10 @@ Choice[] q3Choices =
     new Choice("We Rise"),
     new Choice("New Day's Lyric")
 ];
-MultipleChoice question3 = new(q3, q3Choices);
+MultipleChoice q3 = new(q3Prompt, q3Choices);
 
-quiz.questions.AddRange([question1, question2, question3]);
+quiz.questions.AddRange([q1, q2, q3]);
 quiz.Run();
-
 
 // BONUS MISSION
 
