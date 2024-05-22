@@ -1,2 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// CHAPTER 7 STUDIO
+
+// TODO: RUN A QUIZ
+
+
+
+// BONUS MISSION
+
+// TODO: RUN A SURVEY
