@@ -61,9 +61,8 @@ public class Quiz
                     i++;
                 }
             }
-
         }
-        
+
         Console.WriteLine(
             Environment.NewLine
                 + "You answered "

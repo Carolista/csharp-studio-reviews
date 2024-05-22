@@ -16,7 +16,10 @@ public class Survey : Quiz
         string line = "-------------------------------------------------------------------";
 
         Console.WriteLine(line);
-        Console.WriteLine("Thank you for taking our survey! We have recorded your responses." + Environment.NewLine);
+        Console.WriteLine(
+            "Thank you for taking our survey! We have recorded your responses."
+                + Environment.NewLine
+        );
 
         foreach (KeyValuePair<string, string> kvp in allResponses)
         {
