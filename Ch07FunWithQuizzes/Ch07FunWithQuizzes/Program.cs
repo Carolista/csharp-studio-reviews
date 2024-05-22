@@ -14,11 +14,10 @@ Choice[] q1Choices =
 ];
 Checkbox question1 = new(q1, q1Choices);
 
-String q2 = "The most-published author of all time is Agatha Christie.";
-Choice[] q2Choices = [new Choice("True", true), new Choice("False")];
-TrueFalse question2 = new(q2, q2Choices);
+string q2 = "The most-published author of all time is Agatha Christie.";
+TrueFalse question2 = new(q2);
 
-String q3 =
+string q3 =
     "Which poem did history-making poet Amanda Gorman recite at the U.S. presidential inauguration in 2021?";
 Choice[] q3Choices =
 [

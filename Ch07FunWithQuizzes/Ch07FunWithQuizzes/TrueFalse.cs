@@ -2,8 +2,11 @@
 
 public class TrueFalse : Question
 {
-    public TrueFalse(string prompt, Choice[] choiceArr)
-        : base(prompt, choiceArr) { }
+    public TrueFalse(string prompt)
+        : base(prompt) 
+        {
+            CreateRandomizedChoices([new Choice("True", true), new Choice("False")]);
+        }
 
     public override string ToString()
     {

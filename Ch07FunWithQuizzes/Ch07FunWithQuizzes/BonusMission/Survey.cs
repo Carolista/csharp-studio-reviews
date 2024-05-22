@@ -13,18 +13,16 @@ public class Survey : Quiz
             allResponses.Add(question.Prompt, userResponse);
         }
 
-        string nl = Environment.NewLine;
         string line = "-------------------------------------------------------------------";
 
         Console.WriteLine(line);
-        Console.WriteLine("Thank you for taking our survey! We have recorded your responses." + nl);
+        Console.WriteLine("Thank you for taking our survey! We have recorded your responses." + Environment.NewLine);
 
         foreach (KeyValuePair<string, string> kvp in allResponses)
         {
             Console.WriteLine(kvp.Key);
-            Console.WriteLine(kvp.Value + nl);
+            Console.WriteLine(kvp.Value);
         }
-
         Console.WriteLine(line);
     }
 }

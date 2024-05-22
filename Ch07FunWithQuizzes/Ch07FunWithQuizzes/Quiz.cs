@@ -62,15 +62,16 @@ public class Quiz
                 }
             }
 
-            Console.WriteLine(
-                Environment.NewLine
-                    + "You answered "
-                    + NumCorrect
-                    + " of "
-                    + questions.Count
-                    + " questions correctly. Thanks for playing!"
-                    + Environment.NewLine
-            );
         }
+        
+        Console.WriteLine(
+            Environment.NewLine
+                + "You answered "
+                + NumCorrect
+                + " of "
+                + questions.Count
+                + " questions correctly. Thanks for playing!"
+                + Environment.NewLine
+        );
     }
 }
