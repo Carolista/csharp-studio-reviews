@@ -40,9 +40,9 @@ quiz.Run();
 Survey survey = new();
 
 ShortAnswer faveIceCream = new("What is your favorite flavor of ice cream?");
-LinearScale vanillaRank = new("How much do you like waffle cones?", 5);
+LinearScale waffleConeRating = new("How much do you like waffle cones?", 5);
 Paragraph toppingsExpo =
     new("Now take a moment to expound upon your favorite ice cream toppings and combinations!");
 
-survey.questions.AddRange([faveIceCream, vanillaRank, toppingsExpo]);
+survey.questions.AddRange([faveIceCream, waffleConeRating, toppingsExpo]);
 survey.Run();

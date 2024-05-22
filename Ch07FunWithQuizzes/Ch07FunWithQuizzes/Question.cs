@@ -20,10 +20,9 @@ public abstract class Question
     public void CreateRandomizedChoices(Choice[] choiceArr)
     {
         Random.Shared.Shuffle(choiceArr);
-        List<Choice> choiceList = [.. choiceArr];
-        for (int i = 0; i < choiceList.Count; i++)
+        for (int i = 0; i < choiceArr.Length; i++)
         {
-            Choices.Add(i + 1, choiceList[i]);
+            Choices.Add(i + 1, choiceArr[i]);
         }
     }
 
