@@ -17,8 +17,7 @@ Choice[] q1Choices =
 Checkbox q1 = new(q1Prompt, q1Choices);
 
 string q2Prompt = "The most-published author of all time is Agatha Christie.";
-Choice[] q2Choices = [new Choice("True", true), new Choice("False")];
-TrueFalse q2 = new(q2Prompt, q2Choices);
+TrueFalse q2 = new(q2Prompt, true);
 
 string q3Prompt =
     "Which poem did history-making poet Amanda Gorman recite at the U.S. presidential inauguration in 2021?";

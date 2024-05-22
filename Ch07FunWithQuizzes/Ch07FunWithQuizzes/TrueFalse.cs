@@ -2,8 +2,8 @@
 
 public class TrueFalse : Question
 {
-    public TrueFalse(string prompt, Choice[] choiceArr)
-        : base(prompt, choiceArr) { }
+    public TrueFalse(string prompt, bool isTrue)
+        : base(prompt, [new Choice("True", isTrue), new Choice("False", !isTrue)]) { }
 
     public override string ToString()
     {
