@@ -2,7 +2,7 @@
 
 namespace Ch07FunWithQuizzes;
 
-public class Question
+public abstract class Question
 {
     public string Prompt { get; set; }
     public Dictionary<int, Choice> Choices { get; set; } = [];
@@ -38,4 +38,6 @@ public class Question
         }
         return formattedChoices.ToString();
     }
+
+    public abstract override string ToString();
 }
